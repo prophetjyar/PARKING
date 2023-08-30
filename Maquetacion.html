@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+
+ 
+  <title>The Parking App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+  <header>
+    
+    <h1>The Parking App</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <div class="banner">
+        <img src="imagenes/oficial.jpg" alt="" height="1000px" width="100%">
+                    
+    </div>           
+</div>
+
+  <div class="container">
+    
+    <center>
+    <h2>Iniciar sesión </h2>
+    <form action="procesar_login.php" method="post">
+              <label for="username">Usuario:</label>
+          <input type="text" id="username" name="username" required>
+                  <label for="password">Contraseña:</label>
+                       <input type="password" id="password" name="password" required>
+                <input type="submit" value="Iniciar sesión">
+        </form>
+              <button onclick="signInWithGoogle()">Google</button>
+                  <button onclick="signInWithApple()">Apple</button>
+                        <button onclick="signInWithFacebook()">Facebook</button>
+        </center>
+    </div>
+
+    <section id="inicio">
+        <h2>Bienvenido a The Parking App</h2>
+        <p>Si eres un cliente que frecuenta un lugar cercano a nuestros puntos de servicio, aprovecha las mensualidades que te permiten estacionar un vehículo ilimitadamente sujeto a la disponibilidad de espacio, dentro del horario establecido y registrando hasta dos placas. Ten en cuenta poder realizar un solo cambio de vehículo al mes, que debes pagar por estacionar por fuera del horario establecido, el valor puede cambiar una vez termine la vigencia de 30 días, no acumularás punto en nuestro plan de fidelización, el derecho no es transferible a otros usuarios ni a otros parqueaderos y no admite devoluciones. En caso de no poder prestarte el servicio en el parqueadero donde adquiriste tu mensualidad podemos remitirte a otro parqueadero cercano..</p>
+      </section>
+    
+      <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+          <li>Amplias plazas de estacionamiento</li>
+          <li>Seguridad las 24 horas</li>
+          <li>Tarifas flexibles</li>
+          <li>Servicio de lavado de autos</li>
+        </ul>
+      </section>
+
+      <div class="banner">
+        <img src="imagenes/tarifas.jpeg" alt="" height="500px" width="50%">
+                    
+    </div>      
+    
+  <section id="ubicacion">
+    
+    <h2>Ubicación</h2>
+    <p>Calle 2 # 7-129 facatativa - colombia</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31806.219369843362!2d-74.38446738659012!3d4.808238209147084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f7c5fb29436d7%3A0xee2cd73daf20759c!2sFacatativ%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1686853196244!5m2!1ses!2sco" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>PBX
+        + 57 (1) 519 00 77
+        <br>
+  
+        <br>
+        Servicio al cliente
+        <br>
+        + 57 312 450 7484
+        <br>
+        
+        <br>
+        servicioalcliente@theparkingapp.net.co</p>
+  </section>
+
+  <footer>
+    <p>Derechos Reservados &copy; 2023 The Parkin App</p>
+  </footer>
+</body>
+</html>
+<style>
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #45a049;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #45a049;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos específicos */
+h2 {
+  color: #333;
+}
+
+#servicios ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#ubicacion p {
+  font-style: italic;
+}
+
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: left;
+      background-color: white;
+    }
+    
+    nav{
+          font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      font-size: 20px;
+      text-align: left;
+      background-color: #45a049;
+      
+    }
+    
+    p {
+        font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      font-size: 20px;
+      text-align: left;
+    }
+    
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label, input {
+      display: block; 
+      margin-bottom: 10px;
+      margin-top: 10px;
+      
+      
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    main {
+        font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      
+    }
+
+</style>

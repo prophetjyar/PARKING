@@ -1,0 +1,72 @@
+
+{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-family:'open sans';
+    }
+    
+    .contenedor{
+        padding: 60px 0;
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .titulo{
+        color: #1b8824;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    /* header */
+    header{
+        width: 100%;
+        height: 500px;
+        background: #7F7FD5;  
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #91eae46b, hsla(219, 66%, 72%, 0.658), hsla(240, 51%, 67%, 0.521)),url(../img/conducir-con-perdida-auditiva.jpg);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #91eae46b, hsla(219, 66%, 72%, 0.658), hsla(240, 51%, 67%, 0.521)),url(../img/conducir-con-perdida-auditiva.jpg); 
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+    
+    nav{
+        text-align: right;
+        padding: 30px 50 px 0 0;
+    }
+    
+    nav > a{
+        color: #f5f5fa;
+        font-weight: 300;
+        text-decoration: none;
+       margin-right: 10px;
+    }
+    
+    nav > a:hover{
+       text-decoration: underline;
+    }
+    
+    header .textos-header h1{
+        display: flex;
+        height: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+     
+    }
+    
+    .wave{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
